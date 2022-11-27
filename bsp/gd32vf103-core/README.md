@@ -47,6 +47,8 @@ gd32vf103v-eval 是由兆易创新公司推出的基于开源指令集 RISC-V �
 
 设置 RISC-V Toolchains Path
 
+> GD32VF103 采用芯来科技 Bumblebee 内核（RV32IMAC），故需要从芯来官网下载对应的工具链：https://www.nucleisys.com/download.php
+
 ![risc-v](figures/risc-v-tool.png)
 
 点击 MCU 列表中的 RISC-V Toolchains Paths 选项，为其选择 SDK 文件包中提供的对应工具。

@@ -10,7 +10,7 @@ if os.getenv('RTT_CC'):
 
 if  CROSS_TOOL == 'gcc':
     PLATFORM    = 'gcc'
-    EXEC_PATH   = r'/opt/unknown-gcc/bin'
+    EXEC_PATH   = r'/opt/nuclei_riscv_newlibc_prebuilt_linux64_2022.08/bin'
 else:
     print('Please make sure your toolchains is GNU GCC!')
     exit(0)
@@ -29,7 +29,7 @@ TARGET_NAME = 'rtthread.bin'
 #------- GCC settings ----------------------------------------------------------
 if PLATFORM == 'gcc':
     # toolchains
-    PREFIX = 'riscv-none-embed-'
+    PREFIX = 'riscv-nuclei-elf-'
     CC = PREFIX + 'gcc'
     CXX= PREFIX + 'g++'
     AS = PREFIX + 'gcc'
